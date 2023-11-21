@@ -96,9 +96,10 @@ header nav ul li a:hover {
 /* -------  Search Form ------- */
 
 form {
+  
   border: 2px solid #ff385c;
   padding: 10px;
-
+  display:flex;
 }
 
 form label {
@@ -106,9 +107,8 @@ form label {
 }
 
 form select, form input {
-  margin-bottom: 5px;
-  width: 100px;
-  margin-right:15px;
+  width: 130px;
+  
 }
 
 form button {
@@ -116,14 +116,19 @@ form button {
   border: none;
   color: #fff;
   font-size: 24px;
-  padding: 10px;
-  width: 50%;
+  padding: 15px;
+  width: 100%;
 }
 
 .date::placeholder {
   color: black;
 }
 
+.form-group{
+  display: flex;
+  flex-direction: column;
+  
+}
 
 
 .form-container{
@@ -132,7 +137,19 @@ form button {
 }
 
 
+.group {
+  display: flex;
+  flex-direction: column;
+}
 
+.form-group{
+  flex: 2;
+  margin:10px;
+}
+
+.form-group-double {
+  flex: 2;
+}
 
 /* -------  About ------- */
 
@@ -148,6 +165,12 @@ form button {
   width:30%;
  margin-right: 15px;
 }
+
+#img12 p{
+margin-top: 50px;
+}
+
+
 
 
 /* -------  Ideas ------- */
@@ -178,18 +201,22 @@ form button {
 
 
 /* -------  host ------- */
-
-#host {
+.ses {
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   
-  justify-content: space-between;
 }
 
+.word-item{
+  margin-top: 50px;
+}
+
+
 #host img{
-  width: 50%;
+  width: 40%;
   height: auto;
-  margin-left: 50px;
+  margin-left: 150px;
 }
 
 
@@ -226,29 +253,18 @@ footer p {
 
 
 
-.form-container{
+form{
   display: flex;
   flex-direction: column;
- 
 }
 
 
-.form-group {
-  padding: 0.1em;
-  display: flex; /* Add flex display to the form-group */
-  align-items:center; /* Center items vertically within the form-group */
+.form-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-
-.form-group > label {
-  padding: .5em .2em .5em 0;
-  flex: 1;
-}
-.form-group > input,
-form select {
-  flex: 3;
-  margin: 0.2em; /* Add some margin for spacing */
-}
 
 
 button {
@@ -258,7 +274,7 @@ button {
   border: none;
   cursor: pointer;
   margin-top: 1em; /* Add margin to the button */
-  margin-left: 150px;
+  
 }
 
 button:hover {
@@ -280,6 +296,7 @@ button:hover {
   margin-bottom: 10px;
 }
 
+
 /*-- IDEAS --*/
 
 
@@ -300,16 +317,15 @@ button:hover {
 /*-- HOST --*/
 
 
-#host {
+.ses {
   display: flex;
   flex-direction: column;
-  
-  justify-content: space-around;
+ 
 }
 
-#host img{
-  width: 80%;
-  height: auto;
+#host img {
+  width: 100%; /* Adjust the width for smaller screens */
+  margin-left: 0; /* Remove margin or adjust as needed */
 }
 
 
